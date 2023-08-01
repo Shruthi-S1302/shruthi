@@ -1,6 +1,10 @@
+/* globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font-face definitions and other styles... */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +22,38 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.clip-path-polygon {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 100px) 100%, 0 100%);
+  overflow: "visible";
+}
+.clip-path-none {
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  flex-basis: calc(50% + 100px);
+}
+
+.description-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-star {
+  animation: blink 1s infinite;
 }
