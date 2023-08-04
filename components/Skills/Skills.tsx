@@ -15,6 +15,7 @@ function Skills() {
             height={skill.height}
             width={skill.width}
             className="w-16 h-16 object-contain mb-4"
+            loading="eager"
           />
           <span className="text-center">{skill.name}</span>
         </div>

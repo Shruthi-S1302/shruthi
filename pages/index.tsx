@@ -1,9 +1,8 @@
-import "../app/globals.css";
 import { useState } from "react";
-import Navbar from "@/Components/Navbar/Navbar";
-import Description from "@/Components/Home/Description";
-import Socials from "@/Components/Socials/Socials";
-import Background from "@/Components/Background";
+import Navbar from "../components/Navbar/Navbar";
+import Description from "../components/Home/Description";
+import Socials from "../components/Socials/Socials";
+import Background from "../components/Background";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number>(0);

@@ -1,7 +1,9 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -29,3 +31,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default MyApp;
