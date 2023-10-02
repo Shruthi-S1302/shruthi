@@ -5,7 +5,7 @@ export const NavbarItems = [
   { key: "3", href: "/work", name: "Work", target: "_self" },
   {
     key: "4",
-    href: "https://drive.google.com/file/d/1wLzx_N0wHZPmZHTqu5DUHq25IU_A2qV5/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1CGtGYIjty3narJGd8ge3rM8BpuFTEcTN/view?usp=sharing",
     name: "Resume",
     target: "_blank",
   },
